@@ -11,6 +11,7 @@ targets:
   dev:
     workspace:
       root_path: /Shared_DEV/
+      file_path: /DEV/
   # The 'prod' target, used for production deployment.
   prod:
     workspace:
