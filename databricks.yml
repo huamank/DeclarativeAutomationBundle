@@ -1,0 +1,18 @@
+# Databricks Asset Bundle configuration, more info here: https://docs.databricks.com/en/dev-tools/bundles/settings.html
+bundle:
+  name: "taller"
+
+include:
+  - resources/*.yml
+  - resources/*/*.yml
+
+targets:
+  # The 'dev' target, for development purposes. This target is the default.
+  dev:
+    workspace:
+      root_path: /Shared_DEV/
+  # The 'prod' target, used for production deployment.
+  prod:
+    workspace:
+      # We always use /Users/kremlinhuamansantos@gmail.com for all resources to make sure we only have a single copy.
+      root_path: /Shared_PRD/
